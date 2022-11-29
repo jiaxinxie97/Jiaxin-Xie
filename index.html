@@ -45,7 +45,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/github_icon.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/profile.jpeg" class="hoverZoomLink"></a>
+              <a href="images/github_icon.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/profile_crop.jpeg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -106,8 +106,124 @@
               Training a tiny non-convolutional neural network to reproduce a scene using volume rendering achieves photorealistic view synthesis.</p>
             </td>
           </tr>  -->
-  
+          
+                    <tr onmouseout="RNCR_stop()" onmouseover="RNCR_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='RNCR_image'>
+                  <img src='images/HFGI3D.png' width="160"></div>
+                <img src='images/HFGI3D1.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function RNCR_start() {
+                  document.getElementById('RNCR_image').style.opacity = "1";
+                }
 
+                function RNCR_stop() {
+                  document.getElementById('RNCR_image').style.opacity = "0";
+                }
+                videodepth_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>High-fidelity 3D GAN Inversion by Pseudo-multi-view Optimization</papertitle>
+              </a>
+              <br>
+                  </strong> Jiaxin Xie * </strong>, 
+                  <a href="https://ken-ouyang.github.io/">Hao OUYANG*</a>, 
+                  Jingtan Piao, 
+                  <a herf='https://chenyanglei.github.io/'>Chenyang Lei</a>,
+                  <a href="https://cqf.io/">Qifeng Chen</a>
+              <br>
+                 Arxiv   
+              <br>
+              <a href="https://arxiv.org/abs/2211.15662">arxiv</a> / 
+              <a href="https://ken-ouyang.github.io/HFGI3D/index.html">project website</a> / 
+              <a href="https://github.com/jiaxinxie97/HFGI3D">code</a>
+              <p></p>
+              <p> </p>
+            </td>
+          </tr>
+          <tr onmouseout="sr_iccv21_stop()" onmouseover="sr_iccv21_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='sr_iccv21_image'>
+                  <img src='images/sr_iccv21_after.jpg' width="160"></div>
+                <img src='images/sr_iccv21_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function sr_iccv21_start() {
+                  document.getElementById('sr_iccv21_image').style.opacity = "1";
+                }
+
+                function sr_iccv21_stop() {
+                  document.getElementById('sr_iccv21_image').style.opacity = "0";
+                }
+                sr_iccv21_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle> Dual-Camera Super-Resolution with Aligned Attention Modules  </papertitle>
+              </a>
+              <br>
+               <a herf='https://tengfei-wang.github.io/'>Tengfei Wang*</a>,
+               </strong> Jiaxin Xie * </strong>,
+                <a herf='http://wenxiusun.com/'>Wenxiu Sun</a>,
+                 <a herf='https://scholar.google.com/citations?user=uT9CtPYAAAAJ&hl=en'>Qiong Yan</a>,
+                 <a href="https://cqf.io/">Qifeng Chen</a>
+              <br>
+              <em>ICCV </em>, 2021  <strong style="color:red"> (Oral Presentation)</strong>
+              <br>
+              <a href="https://arxiv.org/abs/2109.01349">arxiv</a> / 
+              <a href="https://github.com/Tengfei-Wang/DCSR">code</a> /  
+              <a href="https://tengfei-wang.github.io/Dual-Camera-SR/index.html">project website</a> /
+              <a href="https://github.com/Tengfei-Wang/DCSR">dataset</a> /  
+              <a href="https://youtu.be/5TiUfAcNvuw">video</a> / 
+              <p></p>
+              <p style="color:red"> First real-world dual-camera super-resolution approach. <br>
+               A new high-quality dataset for dual-camera zoom (telephoto and wide-angle). </p>
+            </td>
+          </tr>
+          <tr onmouseout="sfp_stop()" onmouseover="sfp_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='sfp_image'>
+                  <img src='images/sfp_after.png' width="160"></div>
+                <img src='images/sfp_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function sfp_start() {
+                  document.getElementById('sfp_image').style.opacity = "1";
+                }
+
+                function sfp_stop() {
+                  document.getElementById('sfp_image').style.opacity = "0";
+                }
+                videodepth_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Shape from Polarization for Complex Scenes in the Wild</papertitle>
+              </a>
+              <br>
+               <a herf='https://chenyanglei.github.io/'>Chenyang Lei*</a>,
+               <a herf='https://github.com/ChenyangQiQi'>Chenyang Qi*</a>,
+              <strong>Jiaxin Xie*</strong>,
+              Na Fan, 
+              <a href="http://vladlen.info/">Vladlen Koltun </a>, 
+              <a href="http://cqf.io">Qifeng Chen</a>
+              <br>
+              <em>CVPR</em>, 2022  
+              <br>
+              <a href="https://arxiv.org/pdf/2112.11377.pdf">arxiv</a> / 
+              <a href="https://github.com/ChenyangLEI/sfp-wild">code</a>  
+
+              <p></p>
+              <p>We present a new data-driven approach with physics-based priors to scene-level normal estimation from a single polarization image. </p>
+            </td>
+
+          </tr>
+          
           <tr onmouseout="videodepth_stop()" onmouseover="videodepth_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -141,6 +257,7 @@
               <br>
               <a href="https://arxiv.org/pdf/1912.12874.pdf">arXiv</a> /
               <a href="https://jiaxinxie97.github.io/Jiaxin-Xie/FDNet/FDNet">project page</a> /
+              <a href="https://github.com/jiaxinxie97/Video-depth-estimation">code</a>
               <p></p>
               <p>We present an approach with a differentiable flow-to-depth layer for video depth estimation.</p>
             </td>
